@@ -41,7 +41,7 @@
             "type": "string",
             "defaultValue": "drzewo.com.pl See Notes",
             "metadata": {
-                "description": "External public DNS domain zone. NOT AD domain. This the external domain your certs will point to. Create 2 CNAME records "
+                "description": "External public DNS domain zone. NOT AD domain. This the external domain your certs will point to. Create 2 CNAME records remoteapps.dzrewo.com.pl CNAME mfrdslbpip.eastus.cloudapp.azure.com and broker.drzewo.com.pl CNAME mfrdslbpip.eastus.cloudapp.azure.com, mfrds is projectname, eastus region."
             }
         },
         "deployHA": {

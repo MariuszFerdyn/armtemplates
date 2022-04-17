@@ -87,18 +87,13 @@
         },
         "vmSize": {
             "type": "string",
-            "defaultValue": "Standard_A2_v2",
+            "defaultValue": "Standard_B2ms",
             "allowedValues": [
-                "Standard_A2_v2",
-                "Standard_A4_v2",
-                "Standard_A8_v2",
                 "Standard_D1_v2",
                 "Standard_D2_v2",
-                "Standard_D3_v2",                
-                "Standard_D2_v3",
-                "Standard_D4_v3",
-                "Standard_DS1_v2",
-                "Standard_DS2_v2"
+                "Standard_B2ms",                
+                "Standard_D2s_v4",
+                "Standard_D2_v4"
             ],
             "metadata": {
                 "description": "What is the VM size for all VMs?"
@@ -152,7 +147,7 @@
         },       
         "_artifactsLocation": {
             "type": "string",
-            "defaultValue": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-rds-deployment-full-ha/",
+            "defaultValue": "https://raw.githubusercontent.com/MariuszFerdyn/armtemplates/master/101-rds-deployment-full-ha/",
             "metadata": {
                 "description": "Location of all scripts and DSC resources for RDS deployment."
             }

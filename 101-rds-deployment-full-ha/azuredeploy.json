@@ -4,6 +4,7 @@
     "parameters": {
         "projectName": {
             "type": "string",
+            "defaultValue": "mfrds",
             "minLength": 1,
             "maxLength": 5,
             "metadata": {
@@ -38,14 +39,14 @@
         },
         "externalDnsZone": {
             "type": "string",
-            "defaultValue": "contosocorp.com",
+            "defaultValue": "drzewo.com.pl See Notes",
             "metadata": {
-                "description": "External public DNS domain zone. NOT AD domain. This the external domain your certs will point to."
+                "description": "External public DNS domain zone. NOT AD domain. This the external domain your certs will point to. Create 2 CNAME records "
             }
         },
         "deployHA": {
             "type": "bool",
-            "defaultValue": false,
+            "defaultValue": true,
             "metadata": {
                 "description": "This will trigger certificate request and HA deployment. If set to false, will not create HA deployment nor request certificates."
             }
@@ -59,21 +60,21 @@
         },        
         "rdcbCount": {
             "type": "int",
-            "defaultValue": 1,
+            "defaultValue": 2,
             "metadata": {
                 "description": "How many RD Connection Brokers would you like to deploy?"
             }
         },
         "rdwgCount": {
             "type": "int",
-            "defaultValue": 1,
+            "defaultValue": 2,
             "metadata": {
                 "description": "How many RD Web Access/Gateways would you like to deploy?"
             }            
         },
         "rdshCount": {
             "type": "int",
-            "defaultValue": 1,
+            "defaultValue": 2,
             "metadata": {
                 "description": "How many RD Session Hosts would you like to deploy?"
             }            
@@ -101,7 +102,7 @@
         },
         "vmSpot": {
             "type": "bool",
-            "defaultValue": true,
+            "defaultValue": false,
             "metadata": {
                 "description": "Create Azure Spot VMs?"
             }
@@ -119,7 +120,7 @@
         },
         "adDomainName": {
             "type": "string",
-            "defaultValue": "contoso.com",
+            "defaultValue": "drzewo.com.pl",
             "metadata": {
                 "description": "What is the new forest/root Active Directory domain name?"
             }            

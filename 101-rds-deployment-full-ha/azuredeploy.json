@@ -90,11 +90,11 @@
             "type": "string",
             "defaultValue": "Standard_B2ms",
             "allowedValues": [
-                "Standard_D1_v2",
-                "Standard_D2_v2",
-                "Standard_B2ms",                
-                "Standard_D2s_v4",
-                "Standard_D2_v4"
+                "Standard_DS1_v2",
+                "Standard_D2s_v3",
+                "Standard_B2s",                
+                "Standard_B2ms",
+                "Standard_DS2_v2"
             ],
             "metadata": {
                 "description": "What is the VM size for all VMs?"
